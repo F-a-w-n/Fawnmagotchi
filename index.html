@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./main.js"></script>
+<link rel="stylesheet" href="./style.css">
+<script src="https://kit.fontawesome.com/d24a86b77c.js" crossorigin="anonymous"></script>
+<title>Fawnagotchi!</title>
+</head>
+<body>
+<fawn onmousedown="fawn.click()"></fawn>
+<menu>
+  <div>
+  <i class="fa-solid fa-face-smile" style="color: #EEEEEE;"></i>
+  <div class="bar-container"><div class="bar" id="happy"></div></div>
+  </div>
+  
+  <div>
+  <i class="fa-solid fa-plate-wheat" style="color: #EEEEEE;"></i>
+  <div class="bar-container"><div class="bar" id="hungry"></div></div>
+  </div>
+
+  <div>
+  <i class="fa-solid fa-droplet" style="color: #EEEEEE;"></i>
+  
+  <div class="bar-container"><div class="bar" id="thirsty"></div></div>
+  </div>
+
+  <div>
+  <i class="fa-solid fa-bed" style="color: #EEEEEE;"></i>
+  <div class="bar-container"><div class="bar" id="sleepy"></div></div>
+  </div>
+</menu>
+<tools>
+  <i class="fa-solid fa-heart" onclick="fawn.clickCallback=fawn.happyCallback;"></i>
+  <i class="fa-solid fa-fish" onclick="fawn.clickCallback=fawn.hungryCallback;"></i>
+  <i class="fa-solid fa-glass-water" onclick="fawn.clickCallback=fawn.thirstyCallback;"></i>
+  <i class="fa-solid fa-moon" onclick="fawn.clickCallback=fawn.sleepyCallback;"></i>
+</tools>
+<bubble>
+I love you!
+</bubble>
+</body>
+</html>
